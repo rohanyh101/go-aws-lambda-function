@@ -17,6 +17,7 @@ Before using this repository, ensure you have the following installed:
 - [Go](https://golang.org/doc/install): Version 1.15 or later.
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html): Version 2 or later.
 - An [AWS account](https://aws.amazon.com/) with appropriate permissions.
+- reference: [click here](https://docs.aws.amazon.com/lambda/latest/dg/golang-package.html)
 
 ## Getting Started
 
@@ -36,13 +37,13 @@ cd your-repository-name
 
 2. **Build the Go executable for Linux**:
 
-   #### Make sure that the binary file name must be `bootstrap`, it's mandatory
+   #### Make sure that the binary must be named `bootstrap`, it's mandatory
    
     ```powershell
     GOOS=linux GOARCH=amd64 go build -o bootstrap
     ```
 
-    This generates an executable file named `main` which is the entry point for your Lambda function.
+    This generates an executable file named `bootstrap` entry point for your Lambda function.
 
 ## Deploy the Lambda Function
 
